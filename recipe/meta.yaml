@@ -11,6 +11,7 @@ source:
 
 build:
   number: 0
+  skip: True  # [win32 or (win64 and py2k)]
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
@@ -21,7 +22,7 @@ requirements:
     - jupyter
   run:
     - python
-    - itk
+    - itk >=5.0.0
     - ipydatawidgets >=3.2.0
     - ipywidgets >=7.4.0
     - ipympl
