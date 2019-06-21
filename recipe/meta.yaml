@@ -1,5 +1,5 @@
 {% set name = "itkwidgets" %}
-{% set version = "0.16.2" %}
+{% set version = "0.16.3" %}
 
 package:
   name: {{ name }}
@@ -7,10 +7,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 220f01bc5d17ac1c59629738264a3a34fd41d56a6cf1fad9c4029dd695c3085b
+  sha256: 853e6368b74c26cd701eba98a6b5d4d219e2c17b5c023ac24f07783e4388cfee
 
 build:
   number: 0
+  skip: True  # [win32 or (win64 and py2k)]
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
@@ -21,7 +22,7 @@ requirements:
     - jupyter
   run:
     - python
-    - itk
+    - itk >=5.0.0
     - ipydatawidgets >=3.2.0
     - ipywidgets >=7.4.0
     - ipympl
