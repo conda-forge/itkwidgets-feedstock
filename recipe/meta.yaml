@@ -1,5 +1,5 @@
 {% set name = "itkwidgets" %}
-{% set version = "0.16.3" %}
+{% set version = "0.17.0" %}
 
 package:
   name: {{ name }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 853e6368b74c26cd701eba98a6b5d4d219e2c17b5c023ac24f07783e4388cfee
+  sha256: f32b293454b130219cad46cd3f69771f2a8d7f9723db4ea4766b37c879038f0b
 
 build:
   number: 0
@@ -22,6 +22,7 @@ requirements:
     - jupyter
   run:
     - python
+    - colorcet
     - itk >=5.0.0
     - ipydatawidgets >=3.2.0
     - ipywidgets >=7.4.0
