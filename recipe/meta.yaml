@@ -10,7 +10,7 @@ source:
   sha256: 9e361f4f7500d2d6bf053c38220cbf7ec05ca671f2b6e08a38b752b68c527862
 
 build:
-  number: 0
+  number: 1
   skip: True  # [win32 or (win64 and py2k)]
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
@@ -24,8 +24,8 @@ requirements:
     - python
     - colorcet
     - itk >=5.0.0
-    - ipydatawidgets >=3.2.0
-    - ipywidgets >=7.4.0
+    - ipydatawidgets >=4.0.1
+    - ipywidgets >=7.5.0
     - ipympl
     - numpy
     - scipy
