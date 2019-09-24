@@ -23,9 +23,10 @@ requirements:
   run:
     - python
     - colorcet
-    - itk >=5.0.0
+    - itk >=5.0.1
     - ipydatawidgets >=4.0.1
     - ipywidgets >=7.5.0
+    - itk-meshtopolydata
     - ipympl
     - numpy
     - scipy
