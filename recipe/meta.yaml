@@ -1,5 +1,5 @@
 {% set name = "itkwidgets" %}
-{% set version = "0.20.0" %}
+{% set version = "0.21.1" %}
 
 package:
   name: {{ name }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: d40a25b06fa061392c0ebdaf56133717429c8285da6efaeb561ca887a6353a82
+  sha256: 3d781e2a4d500038363e3872c8b2857e49328f006da21be665725bce08960db1
 
 build:
   number: 0
-  skip: True  # [win32 or (win64 and py2k)]
+  skip: True  # [win32 or py2k]
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
@@ -23,9 +23,10 @@ requirements:
   run:
     - python
     - colorcet
-    - itk >=5.0.0
+    - itk >=5.0.1
     - ipydatawidgets >=4.0.1
     - ipywidgets >=7.5.0
+    - itk-meshtopolydata
     - ipympl
     - numpy
     - scipy
