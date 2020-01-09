@@ -1,7 +1,7 @@
 About itkwidgets
 ================
 
-Home: https://github.com/InsightSoftwareConsortium/itk-jupyter-widgets
+Home: https://github.com/InsightSoftwareConsortium/itkwidgets
 
 Package license: Apache 2.0
 
