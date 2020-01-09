@@ -37,13 +37,13 @@ test:
     - itkwidgets
 
 about:
-  home: https://github.com/InsightSoftwareConsortium/itk-jupyter-widgets
+  home: https://github.com/InsightSoftwareConsortium/itkwidgets
   license: Apache 2.0
   license_family: Apache
   license_file: '{{ environ["RECIPE_DIR"] }}/LICENSE'
   summary: 'Interactive Jupyter widgets to visualize images in 2D and 3D'
-  doc_url: https://github.com/InsightSoftwareConsortium/itk-jupyter-widgets
-  dev_url: https://github.com/InsightSoftwareConsortium/itk-jupyter-widgets
+  doc_url: https://github.com/InsightSoftwareConsortium/itkwidgets
+  dev_url: https://github.com/InsightSoftwareConsortium/itkwidgets
 
 extra:
   recipe-maintainers:
