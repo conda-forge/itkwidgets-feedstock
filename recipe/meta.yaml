@@ -1,5 +1,5 @@
 {% set name = "itkwidgets" %}
-{% set version = "0.25.3" %}
+{% set version = "0.26.0" %}
 
 package:
   name: {{ name }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 10ca9e59db89c1164b141c690fc5b2596a942fcdca303d8c79cc74d299b7ac10
+  sha256: 940faa49ac8238cb6495945be41b6fdc9dd7be589d24ecf93a0a4489b580cf07
 
 build:
   number: 0
-  skip: True  # [win32 or py2k]
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  skip: true  # [win32 or py2k]
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
@@ -40,8 +40,8 @@ about:
   home: https://github.com/InsightSoftwareConsortium/itkwidgets
   license: Apache 2.0
   license_family: Apache
-  license_file: '{{ environ["RECIPE_DIR"] }}/LICENSE'
-  summary: 'Interactive Jupyter widgets to visualize images in 2D and 3D'
+  license_file: {{ environ["RECIPE_DIR"] }}/LICENSE
+  summary: Interactive Jupyter widgets to visualize images in 2D and 3D
   doc_url: https://github.com/InsightSoftwareConsortium/itkwidgets
   dev_url: https://github.com/InsightSoftwareConsortium/itkwidgets
 
