@@ -198,6 +198,5 @@ Feedstock Maintainers
 =====================
 
 * [@SylvainCorlay](https://github.com/SylvainCorlay/)
-* [@hadim](https://github.com/hadim/)
 * [@thewtex](https://github.com/thewtex/)
 
