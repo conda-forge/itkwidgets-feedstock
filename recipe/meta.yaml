@@ -11,7 +11,7 @@ source:
   sha256: d5695c8cba8515ec411bd07e1444521fe910457cb4933e75266ce349b9bae341
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win32 or py2k]
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
@@ -25,6 +25,7 @@ requirements:
     - python
     - colorcet
     - itk >=5.1.0
+    - itk-meshtopolydata >=0.6.2
     - ipydatawidgets >=4.0.1
     - ipywidgets >=7.5.0
     - ipympl
