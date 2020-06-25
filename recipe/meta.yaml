@@ -1,5 +1,5 @@
 {% set name = "itkwidgets" %}
-{% set version = "0.30.0" %}
+{% set version = "0.30.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 2ce176d3eee5e24810ecf0d3672d3ad0469b6a35de2bb0bb09d7cf1ea096ca69
+  sha256: 1ee07480098d3497665f216d5e9b86968e82f2c21fa538bcd75ec61c88e13c5c
 
 build:
   number: 0
