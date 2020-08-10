@@ -29,7 +29,6 @@ requirements:
     - ipywidgets >=7.5.0
     - ipympl
     - numpy
-    - scipy
     - six
     - zstandard
 
