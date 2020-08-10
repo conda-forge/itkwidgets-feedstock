@@ -1,5 +1,5 @@
 {% set name = "itkwidgets" %}
-{% set version = "0.31.4" %}
+{% set version = "0.32.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 790ea64cde18a36b54284468d559aa7fc9cce3301930db4a68bc851137ad77f8
+  sha256: 11ee93007cf354405e01bf9a28fb1eb2fb0a5d139e1cdded1a07b47f7ee76972
 
 build:
   number: 0
@@ -29,7 +29,6 @@ requirements:
     - ipywidgets >=7.5.0
     - ipympl
     - numpy
-    - scipy
     - six
     - zstandard
 
