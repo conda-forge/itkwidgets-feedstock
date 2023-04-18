@@ -246,6 +246,3 @@ Feedstock Maintainers
 * [@SylvainCorlay](https://github.com/SylvainCorlay/)
 * [@thewtex](https://github.com/thewtex/)
 
-
-<!-- dummy commit to enable rerendering -->
-
